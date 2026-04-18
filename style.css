@@ -16,9 +16,10 @@ header {
     padding: 1.5em;
     display: flex;
     align-items: center;
+    gap: 1.5em;
 }
 
-@media screen and (width < 41em) {
+@media screen and (width < 42em) {
     header {
         flex-direction: column;
         text-align: center;
@@ -70,6 +71,7 @@ footer {
 #header-title {
     margin: 0 auto;
     font-size: 3em;
+    text-align: center;
 }
 
 #header-logo-link {
