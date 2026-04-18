@@ -7,8 +7,6 @@ body {
 }
 
 header {
-    position: sticky;
-    top: 0px;
     width: 100%;
     min-height: 10em;
     box-sizing: border-box;
@@ -17,14 +15,17 @@ header {
     display: flex;
     align-items: center;
     gap: 1.5em;
-}
 
-@media screen and (width < 42em) {
-    header {
+    @media screen and (width >= 42em) {
+        position: sticky;
+        top: 0px;
+    }
+    @media screen and (width < 42em) {
         flex-direction: column;
         text-align: center;
     }
 }
+
 
 main {
     flex-grow: 1;
@@ -40,8 +41,8 @@ main {
     @media screen and (width < 50em) {
         display: flex;
         flex-direction: column;
-        padding: 6em;
-        gap: 10em;
+        padding: 4em;
+        gap: 6em;
     }
 }
 
@@ -62,7 +63,7 @@ main {
 #images {
     display: flex;
     flex-direction: column;
-    gap: 4em;
+    gap: 3em;
 }
 
 #images>img {
