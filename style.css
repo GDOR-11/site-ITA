@@ -66,8 +66,15 @@ main {
     gap: 3em;
 }
 
-#images>img {
+.image-container {
     width: 100%;
+    margin: 0px;
+}
+.image {
+    width: 100%;
+}
+.image-description {
+    text-align: center;
 }
 
 footer {
