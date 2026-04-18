@@ -33,7 +33,7 @@ main {
     gap: 2vw;
 }
 
-#contentbox {
+.contentbox {
     border-radius: 10px;
     background-color: #d0cbc8;
     padding: 20px;
