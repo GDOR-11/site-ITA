@@ -28,30 +28,41 @@ header {
 
 main {
     flex-grow: 1;
-    padding: 5vw;
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 5vw;
     background-color: #c8d8ff;
+
+    @media screen and (width >=50em) {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        padding: 4em;
+        gap: 4em;
+    }
+
+    @media screen and (width < 50em) {
+        display: flex;
+        flex-direction: column;
+        padding: 6em;
+        gap: 10em;
+    }
 }
+
 
 #main-content {
     display: flex;
     flex-direction: column;
-    gap: 2vw;
+    gap: 2em;
 }
 
 .contentbox {
-    border-radius: 10px;
+    border-radius: 1em;
     background-color: #d0cbc8;
-    padding: 20px;
+    padding: 1.5em;
     box-sizing: border-box;
 }
 
 #images {
     display: flex;
     flex-direction: column;
-    gap: 3vw;
+    gap: 4em;
 }
 
 #images>img {
