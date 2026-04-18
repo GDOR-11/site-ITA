@@ -10,12 +10,19 @@ header {
     position: sticky;
     top: 0px;
     width: 100%;
-    height: 160px;
+    min-height: 10em;
     box-sizing: border-box;
     background-color: #0030e0;
-    padding: 30px;
+    padding: 1.5em;
     display: flex;
     align-items: center;
+}
+
+@media screen and (width < 41em) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 main {
@@ -45,15 +52,16 @@ main {
     flex-direction: column;
     gap: 3vw;
 }
-#images > img {
+
+#images>img {
     width: 100%;
 }
 
 footer {
     width: 100%;
-    height: 120px;
+    height: 5em;
     background-color: #7070ff;
-    padding: 25px;
+    padding: 1em;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -61,19 +69,21 @@ footer {
 
 #header-title {
     margin: 0 auto;
-    color: black;
+    font-size: 3em;
 }
 
 #header-logo-link {
-    height: 100%;
+    height: 7em;
 }
+
 #header-logo {
     height: 100%;
 }
 
 #footer-logo-link {
-    height: 100%;
+    height: 3em;
 }
+
 #footer-logo {
     height: 100%;
 }
